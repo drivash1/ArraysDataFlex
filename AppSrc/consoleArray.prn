@@ -8,42 +8,60 @@ Including file: dfallent.pkd    (C:\Program Files (x86)\DataFlex 18.2\Pkg\dfalle
 #REM AMBIGUOUS METHODS ON .DESKTOP. ARE .NOT. RECOMMENDED (OBSOLETE TECHNIQUE)
 75290>        
 75290>        //NOMBRE DEL ARREGLO
-75290>        String[] equipoFut
+75290>        String[4,1] equipoFut
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 6 (75290) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
 75291>        
 75291>        //VARIABLE CONTADORA PARA EL CICLO FOR
 75291>        Integer i
 75291>        
 75291>        //LLENADO DEL ARRAY CON POSICIONES DE JUGADORES
-75291>        Move "Portero" to equipoFut[0]
-75292>        Move "Defensa" to equipoFut[1]
-75293>        Move "Medio Campo" to equipoFut[2]
-75294>        Move "Volante" to equipoFut[3]
-75295>        Move "Cambio de Banca" to equipoFut[4]
-75296>        
-75296>        //CICLO FOR PARA RECORRER E IMPRIMIR ARRAY
-75296>        For i from 0 to (SizeOfArray(equipoFut) - 1)
-75302>                Showln equipoFut[i]
-75304>        Loop
-75305>        
-75305>        //FINAL CàDIGO
-75305>        
-75305>End_Procedure
-75306>
-75306>//SE MUESTRA TODO LO QUE TIENE EL PROCEDIMIENTO ARREGLOS
-75306>Send arreglos
-75307>
-75307>//SE MUESTRA EN PANTALLA QUE YA FINALIZà EL PROCESO
-75307>Send Info_Box "Finalizado" "El sistema dice"
-75308>
+75291>        Move "Portero" to equipoFut[0,0]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 12 (75291) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75292>        Move "Defensa" to equipoFut[1,0]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 13 (75292) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75293>        Move "Medio Campo" to equipoFut[2,0]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 14 (75293) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75294>        Move "Volante" to equipoFut[3,0]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 15 (75294) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75295>        Move "Cambio de Banca" to equipoFut[4,0]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 16 (75295) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75296>        Move "Cambio de Banca" to equipoFut[0,1]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 17 (75296) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75297>        Move "Cambio de Banca" to equipoFut[1,1]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 18 (75297) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75298>        Move "Cambio de Banca" to equipoFut[2,1]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 19 (75298) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75299>        Move "Cambio de Banca" to equipoFut[3,1]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 20 (75299) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75300>        Move "Cambio de Banca" to equipoFut[4,1]
+ERROR: 51 Formato incorrecto en c lculo , expected ) ON LINE: 21 (75300) OF FILE: C:\GIT\arrays\AppSrc\consoleArray.src
+75301>        
+75301>        
+75301>        //CICLO FOR PARA RECORRER E IMPRIMIR ARRAY
+75301>        For i from 0 to (SizeOfArray(equipoFut) - 1)
+75307>                Showln equipoFut[i]
+75309>        Loop
+75310>        
+75310>        //FINAL CàDIGO
+75310>        
+75310>End_Procedure
+75311>
+75311>//SE MUESTRA TODO LO QUE TIENE EL PROCEDIMIENTO ARREGLOS
+75311>Send arreglos
+75312>
+75312>//SE MUESTRA EN PANTALLA QUE YA FINALIZà EL PROCESO
+75312>Send Info_Box "Finalizado" "El sistema dice"
+75313>
 Summary
 Memory Available: 2147483646
 Total Warnings : 0
-Total Errors   : 0
+Total Errors   : 11
 Total Symbols  : 43282
 Total Resources: 0
-Total Commands : 75307
+Total Commands : 75312
 Total Windows  : 1
 Total Pages    : 1
-Static Data    : 453165
+Static Data    : 453405
 Message area   : 518620
-Total Blocks   : 27029
+Total Blocks   : 27031
+11 ERRORS HAVE BEEN FOUND.
